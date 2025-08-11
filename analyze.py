@@ -45,9 +45,49 @@ colors = ['purple', 'blue', 'green', 'red']
 top.plot(kind='bar', color=colors)
 
 plt.title(f'Top {top_n} Crime Types', fontsize=16)
+plt.xlabel('Types', fontsize=12)
+plt.ylabel('Number of Crime Entries', fontsize=12)
+plt.xticks(rotation=45, ha='right') 
+
+plt.tight_layout()
+plt.show()
+
+
+area_name = crime['AREA NAME'].value_counts()
+
+top_n = 15
+top = area_name.head(top_n)
+
+
+plt.figure(figsize=(12, 8))
+colors = ['pink', 'blue']
+
+top.plot(kind='bar', color=colors)
+
+plt.title(f'Top {top_n} Areas of Crime', fontsize=16)
 plt.xlabel('Location', fontsize=12)
 plt.ylabel('Number of Crime Entries', fontsize=12)
 plt.xticks(rotation=45, ha='right') 
+
+plt.tight_layout()
+plt.show()
+
+
+crime['DATE OCC CONV'] = pd.to_datetime(crime['DATE OCC'], format='%m/%d/%Y %I:%M:%S %p')
+
+
+crime_s = crime.sort_values(by='DATE OCC CONV')
+print(crime_s)
+
+entries_per_month = crime_s.groupby(crime_s['DATE OCC CONV'].dt.to_period('M')).size()
+
+plt.figure(figsize=(12, 6))
+entries_per_month.plot(kind='line', marker='o')
+
+plt.title('Number of Entries per Month', fontsize=16)
+plt.xlabel('Month', fontsize=12)
+plt.ylabel('Number of Entries', fontsize=12)
+plt.grid(True)
 
 plt.tight_layout()
 plt.show()
