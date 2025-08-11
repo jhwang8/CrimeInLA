@@ -11,5 +11,10 @@ Here are some high level insights into the dataset before I go deeper.
 
 A decent amount of the crimes (above 100000) is related to car theft.
 
+Here are also the top areas in LA and the number of crime entries per area.
+
+<img width="1200" height="800" alt="Top15CrimeAreas" src="https://github.com/user-attachments/assets/f78dde30-43b3-421f-9750-25868234fb45" />
+
+
 
 
