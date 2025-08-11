@@ -6,7 +6,8 @@ https://catalog.data.gov/dataset/crime-data-from-2020-to-present
 
 Here are some high level insights into the dataset before I go deeper.
 
-<img width="1200" height="800" alt="Top10CrimeTypes" src="https://github.com/user-attachments/assets/8e6b0ec5-5eba-4e28-9cf7-b3354ab5b838" />
+
+<img width="1200" height="800" alt="Top10CrimeTypes" src="https://github.com/user-attachments/assets/5b507c5a-216b-44c9-9ab8-39495b2ce472" />
 
 A decent amount of the crimes (above 100000) is related to car theft.
 
