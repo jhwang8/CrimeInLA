@@ -91,3 +91,22 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.show()
+
+
+time_occ = crime['TIME OCC']
+
+
+
+
+plt.figure(figsize=(12, 8))
+colors = ['pink', 'blue']
+
+
+plt.hist(time_occ, bins=30, color='skyblue', edgecolor='black')
+plt.title(f'Crime by Hour', fontsize=16)
+plt.xlabel('Time', fontsize=12)
+plt.ylabel('Frequency', fontsize=12)
+plt.xticks(rotation=45, ha='right') 
+
+plt.tight_layout()
+plt.show()
