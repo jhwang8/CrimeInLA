@@ -20,6 +20,9 @@ After grouping the dataset by month and ordering by month, we can see the number
 
 <img width="1200" height="600" alt="EntriesPerMonth" src="https://github.com/user-attachments/assets/c647ffef-0604-4c23-afeb-6c6ea4d0fabd" />
 
+Additionally it's interesting to note that crime tends to happen in the afternoon, and night more often than in the morning or noon.
+
+<img width="1200" height="800" alt="CrimeByHour" src="https://github.com/user-attachments/assets/8da22995-27f9-4039-a32a-252dcdbc2cc2" />
 
 
 
