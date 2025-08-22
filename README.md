@@ -24,5 +24,18 @@ Additionally it's interesting to note that crime tends to happen in the afternoo
 
 <img width="1200" height="800" alt="CrimeByHour" src="https://github.com/user-attachments/assets/8da22995-27f9-4039-a32a-252dcdbc2cc2" />
 
+# Nutrition and Obesity
+
+Code is in analyze2.py
+
+First I looked to try and find a relationship between income level and BMI. There were two metrics of BMI based on a confidence range. Low_Confidence_Limit is the low end of the range, and High_Confidence_Limit is the high end. I went with the low end of the range.
+
+I was able to make a side by side boxplot of the BMIs, and its worth noting that high income (above 75000 USD) tends to have more variable BMI levels.
+This makes sense if we consider that a higher income may allow someone to spend more money on food, and also that people with higher income may or may not be more aware of their diet.
+
+<img width="800" height="600" alt="Nutrition_income" src="https://github.com/user-attachments/assets/6d323879-7209-4129-8ec7-a1fbee8cb127" />
+
+I needed to remove NA values from this boxplot to make this possible.
+
 
 
