@@ -26,6 +26,7 @@ Additionally it's interesting to note that crime tends to happen in the afternoo
 
 # Nutrition and Obesity
 
+Dataset is here: https://catalog.data.gov/dataset/nhis-adult-summary-health-statistics-b5ce9
 Code is in analyze2.py
 
 First I looked to try and find a relationship between income level and BMI. There were two metrics of BMI based on a confidence range. Low_Confidence_Limit is the low end of the range, and High_Confidence_Limit is the high end. I went with the low end of the range.
