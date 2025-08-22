@@ -38,5 +38,7 @@ This makes sense if we consider that a higher income may allow someone to spend 
 
 I needed to remove NA values from this boxplot to make this possible.
 
+To practice SQL, I downloaded mySQL workbench, mySQL Server, and mySQL. Setting up a server on Windows requires you to go to Services -> mySQL80 and then on mySQLWorkbench make a connection.
+
 
 
