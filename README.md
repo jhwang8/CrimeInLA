@@ -64,3 +64,8 @@ So I fixed that, and I managed to enter the csv into mySQLWorkbench.
 Additionally, it was a pain to define the table manually, as I was hoping Table Import Data Wizard would take care of it, but the program was far too slow at uploading.
 
 Update: I realize the table was empty when I tried to fill it this way. I realize that the terminating character was actually '\n' all along. The issue is that when I did that, it gave an error saying Age(Years) or Sample_Size cannot be null. I simply allowed these columns to accept NULL and now the table is actualy filled.
+
+Here is the output of mySQLWorkbench showing the successful run.
+
+<img width="682" height="22" alt="mySQLOutput" src="https://github.com/user-attachments/assets/8befd0e1-702c-406f-ad75-de4a9dfdcdfc" />
+
