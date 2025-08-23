@@ -192,3 +192,8 @@ SET
   `StratificationCategoryId1` varchar(45) NOT NULL,
   `StratificationID1` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+SELECT * FROM new_table2
+SELECT * FROM new_table2 WHERE Stratification1 = '$15,000 - $24,999'
+SELECT * FROM new_table2 WHERE Stratification1 = '$15,000 - $24,999' AND Low_Confidence_Limit > 30
