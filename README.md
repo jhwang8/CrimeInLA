@@ -69,3 +69,20 @@ Here is the output of mySQLWorkbench showing the successful run.
 
 <img width="682" height="22" alt="mySQLOutput" src="https://github.com/user-attachments/assets/8befd0e1-702c-406f-ad75-de4a9dfdcdfc" />
 
+## Querying
+
+Some SQL Commands I tried are:
+
+`SELECT * FROM new_table2`
+
+This returned all 106260 rows.
+
+`SELECT * FROM new_table2 WHERE Stratification1 = '$15,000 - $24,999'`
+
+This returned 3795 rows. 
+
+`SELECT * FROM new_table2 WHERE Stratification1 = '$15,000 - $24,999' AND Low_Confidence_Limit > 30`
+
+This returned 1444 rows.
+
+
