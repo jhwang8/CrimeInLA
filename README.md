@@ -54,3 +54,41 @@ IGNORE 1 ROWS;
 Then I created a schema called Nutrition and a Table called my_table.
 
 The database has a mix of INT, VARCHAR(45), VARCHAR(500), etc variables. Some variables that were supposed to be double are temporarily assigned as VARCHAR(45) due to some empty values which may have tabs or spaces in them.
+
+CREATE TABLE HERE:
+`CREATE TABLE `new_table2` (
+  `YearStart` int NOT NULL,
+  `YearEnd` int NOT NULL,
+  `LocationAbbr` varchar(45) NOT NULL,
+  `LocationDesc` varchar(45) NOT NULL,
+  `Datasource` varchar(45) NOT NULL,
+  `Class` varchar(45) NOT NULL,
+  `Topic` varchar(45) NOT NULL,
+  `Question` varchar(600) NOT NULL,
+  `Data_Value_Unit` varchar(45) NOT NULL,
+  `Data_Value_Type` varchar(45) NOT NULL,
+  `Data_Value` double NOT NULL,
+  `Data_Value_Alt` double NOT NULL,
+  `Data_Value_Footnote_Symbol` varchar(45) NOT NULL,
+  `Data_Value_Footnote` varchar(500) NOT NULL,
+  `Low_Confidence_Limit` double DEFAULT NULL,
+  `High_Confidence_Limit` double DEFAULT NULL,
+  `Sample_Size` int NOT NULL,
+  `Total` varchar(45) NOT NULL,
+  `Age(years)` int NOT NULL,
+  `Education` varchar(45) NOT NULL,
+  `Sex` varchar(45) NOT NULL,
+  `Income` varchar(45) NOT NULL,
+  `Race/Ethnicity` varchar(45) NOT NULL,
+  `GeoLocation` varchar(45) NOT NULL,
+  `ClassID` varchar(45) NOT NULL,
+  `TopicID` varchar(45) NOT NULL,
+  `QuestionID` varchar(45) NOT NULL,
+  `DataValueTypeID` varchar(45) NOT NULL,
+  `LocationID` int NOT NULL,
+  `StratificationCategory1` varchar(45) NOT NULL,
+  `Stratification1` varchar(45) NOT NULL,
+  `StratificationCategoryId1` varchar(45) NOT NULL,
+  `StratificationID1` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+`
