@@ -85,4 +85,9 @@ This returned 3795 rows.
 
 This returned 1444 rows.
 
+## BMI (Low) and Age
+
+Here we can see the relationship between BMI (Low end of confidence range) and age, it tends to go up as people age.
+
+<img width="800" height="600" alt="Nutrition_age" src="https://github.com/user-attachments/assets/9a59604b-4208-4782-9aaa-f162c8bf40c5" />
 
