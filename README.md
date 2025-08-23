@@ -38,7 +38,18 @@ This makes sense if we consider that a higher income may allow someone to spend 
 
 I needed to remove NA values from this boxplot to make this possible.
 
-To practice SQL, I downloaded mySQL workbench, mySQL Server, and mySQL. Setting up a server on Windows requires you to go to Services -> mySQL80 and then on mySQLWorkbench make a connection. I made a schema and a table, then imported the CSV through Table Import Data Wizard.
+To practice SQL, I downloaded mySQL workbench, mySQL Server, and mySQL. Setting up a server on Windows requires you to go to Services -> mySQL80 and then on mySQLWorkbench make a connection. I made a schema and a table, then imported the CSV through by running this code in SQL: 
 
+`SET GLOBAL local_infile=TRUE;
+SHOW VARIABLES LIKE 'secure_file_priv';
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Nutrition.csv'
+INTO TABLE new_table
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+`
 
+Then I created a schema called Nutrition and a Table called my_table.
 
+The database has a mix of INT, VARCHAR(45), VARCHAR(500), etc variables. Some variables that were supposed to be double are temporarily assigned as VARCHAR(45) due to some empty values which may have tabs or spaces in them.
