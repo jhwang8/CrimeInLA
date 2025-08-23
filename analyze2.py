@@ -43,6 +43,7 @@ total = df.loc[df['StratificationCategory1'] == 'Total']
 #Need to rename Race\Ethnicity
 
 #print(df['StratificationCategory1'].unique())
+print(df['Age(years)'].unique())
 
 print(income)
 income1 = income.loc[income['Stratification1'] == '$15,000 - $24,999']
@@ -52,6 +53,14 @@ income4 = income.loc[income['Stratification1'] == '$50,000 - $74,999']
 income5 = income.loc[income['Stratification1'] == '$75,000 or greater']
 income6 = income.loc[income['Stratification1'] == 'Data not reported']
 income7 = income.loc[income['Stratification1'] == 'Less than $15,000']
+
+
+age1 = age.loc[age['Stratification1'] == '18 - 24']
+age2 = age.loc[age['Stratification1'] == '25 - 34']
+age3 = age.loc[age['Stratification1'] == '35 - 44']
+age4 = age.loc[age['Stratification1'] == '45 - 54']
+age5 = age.loc[age['Stratification1'] == '55 - 64']
+age6 = age.loc[age['Stratification1'] == '65 or older']
 
 
 incomes = [income1, income2, income3, income4, income5, income6, income7]
@@ -144,6 +153,29 @@ sns.boxplot(x='Category', y='Value', data=income_long)
 plt.xticks(rotation=45, ha='right')
 plt.title('BMI (Low) by Income Range')
 plt.xlabel('Income')
+plt.ylabel('BMI (Low end of confidence range)')
+plt.tight_layout()
+plt.show()
+
+
+data_wide = pd.DataFrame({
+    '18 - 24': age1['Low_Confidence_Limit'],
+    '25 - 34': age2['Low_Confidence_Limit'],
+    '35 - 44': age3['Low_Confidence_Limit'],
+    '45 - 54': age4['Low_Confidence_Limit'],
+    '55 - 64': age5['Low_Confidence_Limit'],
+    '65 or older': age6['Low_Confidence_Limit'],
+
+})
+
+income_long = pd.melt(data_wide, var_name='Category', value_name='Value')
+
+print(income['Low_Confidence_Limit'])
+plt.figure(figsize=(8, 6))
+sns.boxplot(x='Category', y='Value', data=income_long)
+plt.xticks(rotation=45, ha='right')
+plt.title('BMI (Low) by Age Range')
+plt.xlabel('Age')
 plt.ylabel('BMI (Low end of confidence range)')
 plt.tight_layout()
 plt.show()
