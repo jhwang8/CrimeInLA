@@ -91,3 +91,16 @@ Here we can see the relationship between BMI (Low end of confidence range) and a
 
 <img width="800" height="600" alt="Nutrition_age" src="https://github.com/user-attachments/assets/9a59604b-4208-4782-9aaa-f162c8bf40c5" />
 
+## Power BI
+
+Here I try using PowerBI to get the average percentage of people, who fit a specific description, by group.
+Right here i filter out weird percentage values above 100:
+<img width="955" height="144" alt="filter" src="https://github.com/user-attachments/assets/5e64419d-37ca-47e7-84b8-84333b5f3cc4" />
+
+And here is a dashboard with multiple bar charts for each decription, of the average percentage of people that fit that description, by group.
+
+<img width="1385" height="593" alt="dashboard1" src="https://github.com/user-attachments/assets/e0caf0fa-b571-4d6f-b543-6b7877bf52c6" />
+
+
+
+
